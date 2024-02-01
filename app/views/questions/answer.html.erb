@@ -1,0 +1,17 @@
+<div class="alert alert-secondary">
+  <p><%= @question %></p>
+  <p>- You</p>
+</div>
+
+<div class="alert alert-warning">
+  <% if @question == "I am going to work"%>
+    <p>Great!</p>
+  <% elsif @question.include?("?") %>
+    <p>Silly question, get dressed and go to work!.</p>
+  <% else %>
+    <p>I don't care, get dressed and go to work!</p>
+  <% end %>
+  <p>- Your coach</p>
+</div>
+
+<%= link_to("Ask another question", ask_path) %>

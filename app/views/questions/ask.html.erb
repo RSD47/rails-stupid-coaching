@@ -1,0 +1,7 @@
+<form action="/answer" data-turbo="false">
+  <label for="answer">Ask your coach anything</label>
+  <div class="input-group flex-nowrap">
+    <input type="text" name="answer" value="<% params[:question] %>" class="form-control">
+    <input type="submit" value="Ask!" class="btn btn-primary input-group-button">
+  </div>
+</form>
